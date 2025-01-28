@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/TABLAS.css">
+    <link rel="stylesheet" href="./css/estilos2.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/pagprin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>Editar Usuarios</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="./ingresarUsuario.html">Registrar Usuarios</a></li>
+                <li><a href="./usuarios.html">Mostar Usuarios</a></li>
+                <li><a href="./editarUsuarios.html">Editar Usuarios</a></li>
+                <li><a href="./ingresarFactura.html">Ingresar Factura</a></li>
+                <li><a href="./mostrarIngresos.html">Mostrar Ingresos</a></li>
+
+                <li><a href="./ingresarClientes.html">Registrar Clientes</a></li>
+                <li><a href="./mostrarClientes.html">Mostrar Clientes</a></li>
+                <li><a href="./tablas.html">Ver Tablas</a></li>
+
+            </ul>
+        </nav>
+        <a href="./index.html" class="btn_menu"><button>Salir</button></a>
+    </header>
+    <table id="tabla"></table>
+
+    <!-- Formulario para editar datos -->
+    <div id="editForm" style="display:none;">
+        <h3>Editar Usuario</h3>
+        <form id="form_editar">
+            <label>nombre del Usuario:</label>
+            <input type="text" id="nombre" name="cod_usuario">
+            <br>
+
+            <label>contraseña del Usuario:</label>
+            <input type="text" id="contra" name="cod_usuario">
+            <br>
+            <label>correo de Usuario:</label>
+            <input type="text" id="correo" name="tipo_usuario">
+            <br>
+            <button type="button" id="btn_guardar">Guardar</button>
+        </form>
+    </div>
+
+    <script src="./js/editarUsuarios.js"></script>
+</body>
+
+</html>

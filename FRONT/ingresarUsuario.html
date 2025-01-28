@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/estilos2.css">
+    <link rel="stylesheet" href="./css/pagprin.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    
+    <title>ingresar Usuarios</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="./ingresarUsuario.html">Registrar Usuarios</a></li>
+                <li><a href="./usuarios.html">Mostar Usuarios</a></li>
+                <li><a href="./editarUsuarios.html">Editar Usuarios</a></li>
+                <li><a href="./ingresarFactura.html">Ingresar Factura</a></li>
+                <li><a href="./mostrarIngresos.html">Mostrar Ingresos</a></li>
+
+                <li><a href="./ingresarClientes.html">Registrar Clientes</a></li>
+                <li><a href="./mostrarClientes.html">Mostrar Clientes</a></li>
+                <li><a href="./tablas.html">Ver Tablas</a></li>
+
+            </ul>
+        </nav>
+        <a href="./index.html" class="btn_menu"><button>Salir</button></a>
+    </header>
+
+    <main>
+
+        <div class="content">
+            <h1 class="titulos"> <span>Registro</span></h1>
+            <a href="./usuarios.html"><button class="buscar">Ver Usuarios</button></a>
+
+            <!--boton
+            <<div class="boton-modal2">>-->
+            <label class="buscar" for="btn-modal2">
+                nota Adicional
+            </label>
+        </div>
+
+        <!--fin de boton -->
+
+        <!--ventana modal -->
+        <input type="checkbox" id="btn-modal2">
+        <div class="container-modal2">
+            <div class="content-modal2">
+                <h2>Nota Adicional</h2>
+                <textarea name="nota" id="" cols="30" rows="10"></textarea>
+                <div class="btn-cerrar2">
+                    <label for="btn-modal2">cerrar</label>
+                </div>
+            </div>
+            <label for="btn-modal2" class="cerrar-modal2"></label>
+        </div>
+
+        <!--fin de ventana modal -->
+
+
+        <div class="content">
+            <h1 class="titulos"> <span>Registro </span></h1>
+
+            <div class="content-wrapper">
+                <div class="content-form">
+                    <form action="">
+                        <p>
+                            <label for="txt_nombre">Nombre</label>
+                            <input type="text" name="txt_nombre" id="txt_nombre" required>
+                        </p>
+                        <p>
+                            <label for="txt_usuario_reg">Usuario</label>
+                            <input type="text" name="txt_usuario_reg" id="txt_usuario_reg">
+                        </p>
+                        <p>
+                            <label for="txt_pass_reg">Contraseña</label>
+                            <input type="password" id="txt_pass_reg" name="txt_pass_reg">
+                        </p>
+                        
+                        <p>
+                            <label for="txt_email">Correo Electronico</label>
+                            <input type="email" name="txt_email" id="txt_email">
+                        </p>
+                        <p>
+                            <label for="select_TU">Tipo de Usuario</label>
+                            <select name="select_TU" id="select_TU">
+                                <option value="1">Administrador</option>
+                                <option value="2">Usuario</option>
+                            </select>
+                        </p>
+                        <P>
+                            <button id="btn_registro" class="block">Registrarse</button>
+                        </P>
+
+                    </form>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </main>
+
+    <script src="./js/registarUsuarios.js"></script>
+</body>
+
+</html>

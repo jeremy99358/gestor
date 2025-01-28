@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/TABLAS.css">
+    <link rel="stylesheet" href="./css/estilos2.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/pagprin.css">
+	<link rel="stylesheet" href="index.css">
+
+	
+
+	<title>Teach Acounting</title>
+</head>
+
+<body>
+
+	<header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="./ingresarUsuario.html">Registrar Usuarios</a></li>
+                <li><a href="./usuarios.html">Mostar Usuarios</a></li>
+                <li><a href="./editarUsuarios.html">Editar Usuarios</a></li>
+                <li><a href="./mostrarIngresos.html">Mostrar Ingresos</a></li>
+                
+                <li><a href="./ingresarClientes.html">Registrar Clientes</a></li>
+                <li><a href="./mostrarClientes.html">Mostrar Clientes</a></li>
+                <li><a href="./tablas.html">Ver Tablas</a></li>
+
+            </ul>
+        </nav>
+        <a href="./index.html" class="btn_menu"><button>Salir</button></a>
+    </header>
+
+	<main>
+		<br>
+		<input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Buscar"> <button id="btn-buscar">
+			<i class="fa-solid fa-magnifying-glass"></i></button>
+
+		<table id="tabla">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nombre</th>
+					<th>Nombre de usuario</th>
+					<th>Cédula</th>
+					<th>Correo</th>
+					<th>Tipo usuario</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Amanda vargas</td>
+					<td>amavb</td>
+					<td>119000556</td>
+					<td>amavb11@gmail.com</td>
+					<td>usuario</td>
+
+					<td><button class="edit-btn">Editar</button></td>
+					<td><button class="edit-btn">Eliminar</button></td>
+
+
+				</tr>
+				<!-- Agrega más filas según sea necesario -->
+			</tbody>
+		</table>
+
+		<div id="editForm" style="display:none;">
+        <h3>Editar Usuario</h3>
+        <form id="form_editar">
+            <label for="edit_tipo_usuario">Tipo Usuario:</label>
+            <input type="text" id="edit_tipo_usuario" name="tipo_usuario">
+            <br>
+            <label for="edit_cod_usuario">Código Usuario:</label>
+            <input type="text" id="edit_cod_usuario" name="cod_usuario">
+            <br>
+            <button type="button" id="btn_guardar">Guardar</button>
+        </form>
+    </div>
+
+	</main>
+
+	<script src="./js/mostarUsuarios.js"></script>
+	
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/estilos2.css">
+    <link rel="stylesheet" href="./css/pagprin.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Ingresar Factura</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="./ingresarUsuario.html">Registrar Usuarios</a></li>
+                <li><a href="./usuarios.html">Mostar Usuarios</a></li>
+                <li><a href="./editarUsuarios.html">Editar Usuarios</a></li>
+                <li><a href="./ingresarFactura.html">Ingresar Factura</a></li>
+                <li><a href="./mostrarIngresos.html">Mostrar Ingresos</a></li>
+
+                <li><a href="./ingresarClientes.html">Registrar Clientes</a></li>
+                <li><a href="./mostrarClientes.html">Mostrar Clientes</a></li>
+                <li><a href="./tablas.html">Ver Tablas</a></li>
+
+
+            </ul>
+        </nav>
+        <a href="./index.html" class="btn_menu"><button>Salir</button></a>
+    </header>
+
+    <form id="facturaForm">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br>
+
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="monto">Monto:</label>
+        <input type="number" id="monto" name="monto" required><br>
+
+        <label for="tipo_moneda">Tipo de Moneda:</label>
+        <select id="tipo_moneda" name="tipo_moneda" required>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="MXN">MXN</option>
+        </select><br>
+
+        <label for="tipo_iva">Tipo de IVA:</label>
+        <select id="tipo_iva" name="tipo_iva" required>
+            <option value="0.21">21%</option>
+            <option value="0.10">10%</option>
+            <option value="0.05">5%</option>
+        </select><br>
+
+        <button type="button" id="btn_aceptar">Ingresar Factura</button>
+    </form>
+
+    <script src="./js/ingresarFactura.js"></script>
+</body>
+</html>

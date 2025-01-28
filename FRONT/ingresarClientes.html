@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos2.css">
+    <link rel="stylesheet" href="./css/pagprin.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Registrar Clientes</title>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="./ingresarUsuario.html">Registrar Usuarios</a></li>
+                <li><a href="./usuarios.html">Mostar Usuarios</a></li>
+                <li><a href="./editarUsuarios.html">Editar Usuarios</a></li>
+                <li><a href="./ingresarFactura.html">Ingresar Factura</a></li>
+                <li><a href="./mostrarIngresos.html">Mostrar Ingresos</a></li>
+
+                <li><a href="./ingresarClientes.html">Registrar Clientes</a></li>
+                <li><a href="./mostrarClientes.html">Mostrar Clientes</a></li>
+                <li><a href="./tablas.html">Ver Tablas</a></li>
+
+            </ul>
+        </nav>
+        <a href="./index.html" class="btn_menu"><button>Salir</button></a>
+    </header>
+    <main>
+        <div class="content">
+            <h1 class="titulos"> <span>Registro</span></h1>
+            <a href="./usuarios.html"><button class="buscar">Ver Usuarios</button></a>
+            <label class="buscar" for="btn-modal2">
+                Nota Adicional
+            </label>
+        </div>
+        <input type="checkbox" id="btn-modal2">
+        <div class="container-modal2">
+            <div class="content-modal2">
+                <h2>Nota Adicional</h2>
+                <textarea name="nota" id="" cols="30" rows="10"></textarea>
+                <div class="btn-cerrar2">
+                    <label for="btn-modal2">Cerrar</label>
+                </div>
+            </div>
+            <label for="btn-modal2" class="cerrar-modal2"></label>
+        </div>
+        <div class="content-wrapper">
+            <div class="content-form">
+                <form id="clienteForm">
+                    <p>
+                        <label>Cédula</label>
+                        <input type="text" name="txt_ID" id="txt_ID">
+                    </p>
+                    <p>
+                        <label for="select_ced">Tipo de Cédula</label>
+                        <select name="select_ced" id="select_ced">
+                            <option value="1">Física</option>
+                            <option value="2">Jurídica</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" id="txt_prov1" name="txt_prov">
+                    </p>
+                    <p>
+                        <label for="select_cliente">Tipo de Cliente</label>
+                        <select name="select_cliente" id="select_cliente">
+                            <option value="1">Cliente</option>
+                            <option value="2">Proveedor</option>
+                        </select>
+                    </p>
+                    <p>
+                        <button type="button" id="btn_aceptar" class="block">Aceptar</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./js/registrarClientes.js"></script>
+</body>
+</html>

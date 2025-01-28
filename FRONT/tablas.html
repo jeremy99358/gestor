@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" href="./css/estilos2.css">
+    <link rel="stylesheet" href="./css/pagprin.css">
+    <link rel="stylesheet" href="./css/modal.css">
+
+    <meta charset="UTF-8">
+    <title>Gráficas Interactivas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #chartContainer {
+            width: 100%;
+            height: 400px;
+            overflow: auto;
+            border: 1px solid #ccc;
+        }
+
+        #MiGrafica {
+            width: 800px;
+            height: 600px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="./ingresarUsuario.html">Registrar Usuarios</a></li>
+                <li><a href="./usuarios.html">Mostar Usuarios</a></li>
+                <li><a href="./editarUsuarios.html">Editar Usuarios</a></li>
+                <li><a href="./ingresarFactura.html">Ingresar Factura</a></li>
+                <li><a href="./mostrarIngresos.html">Mostrar Ingresos</a></li>
+
+                <li><a href="./ingresarClientes.html">Registrar Clientes</a></li>
+                <li><a href="./mostrarClientes.html">Mostrar Clientes</a></li>
+                <li><a href="./tablas.html">Ver Tablas</a></li>
+
+
+            </ul>
+        </nav>
+        <a href="./index.html" class="btn_menu"><button>Salir</button></a>
+    </header>
+    <div>
+        <div id="chartContainer2">
+            <canvas id="MiGrafica2"></canvas>
+        </div>
+        <br>
+        <button onclick="cambiarTipo('bar')">Gráfica de Barras</button>
+        <button onclick="cambiarTipo('line')">Gráfica de Líneas</button>
+        <button onclick="cambiarTipo('pie')">Gráfica de Pastel</button>
+        <button onclick="descargarGrafica1()">Descargar Gráfica</button>
+        <br><br>
+    </div>
+    <br>
+    <div id="chartContainer">
+        <canvas id="MiGrafica"></canvas>
+    </div>
+    <br>
+    <button onclick="cambiarTipo('bar')">Gráfica de Barras</button>
+    <button onclick="cambiarTipo('line')">Gráfica de Líneas</button>
+    <button onclick="cambiarTipo('pie')">Gráfica de Pastel</button>
+    <button onclick="descargarGrafica()">Descargar Gráfica</button>
+    <br><br>
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>ID Ingreso</th>
+                <th>Fecha</th>
+                <th>ID Cliente</th>
+                <th>Nombre</th>
+                <th>Monto</th>
+                <th>Tipo Moneda</th>
+                <th>Tipo IVA</th>
+                <th>IVA</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los datos se insertarán aquí -->
+        </tbody>
+    </table>
+
+    <script src="tablas.js"></script>
+</body>
+
+</html>
+</tbody>
+    </div> <br>
+    
+    <script src="./js/tablas.js">
+       
+    </script>
+</body>
+
+</html>
